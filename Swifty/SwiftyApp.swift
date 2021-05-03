@@ -11,7 +11,8 @@ import SwiftUI
 struct SwiftyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let game = EmojiMemoryGame()
+            MatchGameView(gameView: game)
         }
     }
 }
