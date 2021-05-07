@@ -11,27 +11,11 @@ struct MatchGameView: View {
     @ObservedObject var gameView: EmojiMemoryGame
     
     var body: some View {
-//        HStack {
-//            ForEach(gameView.cards) { card in
-//                CardView(card: card).onTapGesture {
-//                    gameView.selectCard(card: card)
-//                }
-//            }
-//        }
-        
-        let chunks: Array<Array<MemoryGame.Card>> = gameView.cards.chunked(into: 4);
-
-        return VStack() {
-            ForEach(0..<chunks.count)  { i in
-                let row = chunks[i]
-                HStack() {
-                    ForEach(row) { (card: MemoryGame.Card) in
-                        CardView(card: card).onTapGesture {
-                            gameView.selectCard(card: card)
-                        }
-                    }
-                }
+        Grid(gameView.cards) { card in
+            CardView(card: card).onTapGesture {
+                gameView.selectCard(card: card)
             }
+            .padding(5)
         }
     }
 }
@@ -66,9 +50,11 @@ struct CardView: View {
                 Text(card.content)
                     .foregroundColor(.white)
             } else {
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .fill()
-                    .foregroundColor(Color.green)
+                if !card.isMatched {
+                    RoundedRectangle(cornerRadius: cornerRadius)
+                        .fill()
+                        .foregroundColor(Color.green)
+                }
             }
         }
         .font(Font.system(size: fontSize(for: size)))
@@ -80,13 +66,5 @@ struct CardView: View {
     
     func fontSize(for size: CGSize) -> CGFloat {
         min(size.width, size.height) * 0.75
-    }
-}
-
-extension Array {
-    func chunked(into size: Int) -> [[Element]] {
-        return stride(from: 0, to: count, by: size).map {
-            Array(self[$0 ..< Swift.min($0 + size, count)])
-        }
     }
 }
