@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-class EmojiMemoryGame {
-    private var game: MemoryGame<String> = EmojiMemoryGame.createGame()
+class EmojiMemoryGame: ObservableObject {
+    @Published private var game: MemoryGame<String> = EmojiMemoryGame.createGame()
         
     static func createGame() -> MemoryGame<String> {
-        let emojois: Array<String> = ["👻", "💀", "☠️", "👽", "👾", "🤖", "🎃", "👍🏻", "😀", "♦︎"]
+        let emojois: Array<String> = ["👻", "💀", "☠️", "👽", "👾", "🤖", "🎃", "👍🏻", "😀","🤪", "😍", "😎"]
         return MemoryGame<String>(pairCount: emojois.count) { index in
             return emojois[index]
         }
@@ -28,6 +28,6 @@ class EmojiMemoryGame {
     // MARK: - Intent(s)
     
     func selectCard(card: MemoryGame<String>.Card) {
-        game.selectCard(card: card)
+        game.selectCard(card)
     }
 }
