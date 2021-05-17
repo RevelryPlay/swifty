@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1224292651CE5300A63DAC /* AnimatableSystemFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1224282651CE5300A63DAC /* AnimatableSystemFontModifier.swift */; };
+		AB12242B2651DD2A00A63DAC /* OptionalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12242A2651DD2A00A63DAC /* OptionalImage.swift */; };
+		AB19220D26506C0100EF34AF /* EmojiArtDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19220C26506C0100EF34AF /* EmojiArtDocumentView.swift */; };
+		AB19220F26506C1400EF34AF /* EmojiArtDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19220E26506C1400EF34AF /* EmojiArtDocument.swift */; };
+		AB1922112650703400EF34AF /* EmojiArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1922102650703400EF34AF /* EmojiArt.swift */; };
+		AB192213265074D300EF34AF /* EmojiArtExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB192212265074D300EF34AF /* EmojiArtExtensions.swift */; };
 		AB6810EF263F26A100D86D40 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6810EE263F26A100D86D40 /* MemoryGame.swift */; };
 		AB6810F1263F292700D86D40 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6810F0263F292700D86D40 /* EmojiMemoryGame.swift */; };
 		AB7B0E93264886EA000C992C /* TimerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B0E92264886EA000C992C /* TimerShape.swift */; };
@@ -41,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB1224282651CE5300A63DAC /* AnimatableSystemFontModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableSystemFontModifier.swift; sourceTree = "<group>"; };
+		AB12242A2651DD2A00A63DAC /* OptionalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OptionalImage.swift; path = "Emoji Art/OptionalImage.swift"; sourceTree = "<group>"; };
+		AB19220C26506C0100EF34AF /* EmojiArtDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentView.swift; sourceTree = "<group>"; };
+		AB19220E26506C1400EF34AF /* EmojiArtDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocument.swift; sourceTree = "<group>"; };
+		AB1922102650703400EF34AF /* EmojiArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArt.swift; sourceTree = "<group>"; };
+		AB192212265074D300EF34AF /* EmojiArtExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiArtExtensions.swift; sourceTree = "<group>"; };
 		AB6810EE263F26A100D86D40 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		AB6810F0263F292700D86D40 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		AB7B0E92264886EA000C992C /* TimerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerShape.swift; sourceTree = "<group>"; };
@@ -88,6 +100,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB19220B26506B2A00EF34AF /* Emoji Art */ = {
+			isa = PBXGroup;
+			children = (
+				AB1224282651CE5300A63DAC /* AnimatableSystemFontModifier.swift */,
+				AB192212265074D300EF34AF /* EmojiArtExtensions.swift */,
+				AB19220C26506C0100EF34AF /* EmojiArtDocumentView.swift */,
+				AB19220E26506C1400EF34AF /* EmojiArtDocument.swift */,
+				AB1922102650703400EF34AF /* EmojiArt.swift */,
+			);
+			path = "Emoji Art";
+			sourceTree = "<group>";
+		};
 		ABDAD44A263F148600BB2E18 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +135,7 @@
 		ABDAD455263F148600BB2E18 /* Swifty */ = {
 			isa = PBXGroup;
 			children = (
+				AB19220B26506B2A00EF34AF /* Emoji Art */,
 				ABA11EBC2644D25E00A5AE87 /* Array+Indentifiable.swift */,
 				ABA11EBE2644E18C00A5AE87 /* Array+Only.swift */,
 				ABDAD481263F211100BB2E18 /* MatchGame */,
@@ -118,6 +143,7 @@
 				ABDAD45A263F148700BB2E18 /* Assets.xcassets */,
 				ABDAD45F263F148700BB2E18 /* Info.plist */,
 				ABDAD45C263F148700BB2E18 /* Preview Content */,
+				AB12242A2651DD2A00A63DAC /* OptionalImage.swift */,
 			);
 			path = Swifty;
 			sourceTree = "<group>";
@@ -292,14 +318,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB6810EF263F26A100D86D40 /* MemoryGame.swift in Sources */,
+				AB19220D26506C0100EF34AF /* EmojiArtDocumentView.swift in Sources */,
 				ABA11EBD2644D25E00A5AE87 /* Array+Indentifiable.swift in Sources */,
 				AB7B0E93264886EA000C992C /* TimerShape.swift in Sources */,
+				AB1922112650703400EF34AF /* EmojiArt.swift in Sources */,
 				ABDAD459263F148600BB2E18 /* MatchGameView.swift in Sources */,
+				AB192213265074D300EF34AF /* EmojiArtExtensions.swift in Sources */,
+				AB12242B2651DD2A00A63DAC /* OptionalImage.swift in Sources */,
 				ABDAD457263F148600BB2E18 /* SwiftyApp.swift in Sources */,
 				ABA11EBB2644CE5F00A5AE87 /* GridLayout.swift in Sources */,
+				AB19220F26506C1400EF34AF /* EmojiArtDocument.swift in Sources */,
 				ABA11EB92644C9E900A5AE87 /* Grid.swift in Sources */,
 				AB6810F1263F292700D86D40 /* EmojiMemoryGame.swift in Sources */,
 				AB7B0E9526488DD8000C992C /* Cardify.swift in Sources */,
+				AB1224292651CE5300A63DAC /* AnimatableSystemFontModifier.swift in Sources */,
 				ABA11EBF2644E18D00A5AE87 /* Array+Only.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

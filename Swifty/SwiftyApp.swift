@@ -11,8 +11,13 @@ import SwiftUI
 struct SwiftyApp: App {
     var body: some Scene {
         WindowGroup {
-            let game = EmojiMemoryGame()
-            MatchGameView(gameView: game)
+//            HStack{
+                EmojiArtDocumentView(document: EmojiArtDocument())
+                
+//                let game = EmojiMemoryGame()
+//                MatchGameView(gameView: game)
+//            }
+            
         }
     }
 }
