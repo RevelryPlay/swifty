@@ -17,6 +17,8 @@
 		AB6810F1263F292700D86D40 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6810F0263F292700D86D40 /* EmojiMemoryGame.swift */; };
 		AB7B0E93264886EA000C992C /* TimerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B0E92264886EA000C992C /* TimerShape.swift */; };
 		AB7B0E9526488DD8000C992C /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B0E9426488DD8000C992C /* Cardify.swift */; };
+		AB8188FC276BFE32003D2CDF /* SidbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8188FB276BFE32003D2CDF /* SidbarView.swift */; };
+		AB8188FE276BFECA003D2CDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8188FD276BFECA003D2CDF /* ContentView.swift */; };
 		ABA11EB92644C9E900A5AE87 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA11EB82644C9E900A5AE87 /* Grid.swift */; };
 		ABA11EBB2644CE5F00A5AE87 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA11EBA2644CE5F00A5AE87 /* GridLayout.swift */; };
 		ABA11EBD2644D25E00A5AE87 /* Array+Indentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA11EBC2644D25E00A5AE87 /* Array+Indentifiable.swift */; };
@@ -48,15 +50,18 @@
 
 /* Begin PBXFileReference section */
 		AB1224282651CE5300A63DAC /* AnimatableSystemFontModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableSystemFontModifier.swift; sourceTree = "<group>"; };
-		AB12242A2651DD2A00A63DAC /* OptionalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OptionalImage.swift; path = "Emoji Art/OptionalImage.swift"; sourceTree = "<group>"; };
+		AB12242A2651DD2A00A63DAC /* OptionalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalImage.swift; sourceTree = "<group>"; };
 		AB19220C26506C0100EF34AF /* EmojiArtDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentView.swift; sourceTree = "<group>"; };
 		AB19220E26506C1400EF34AF /* EmojiArtDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocument.swift; sourceTree = "<group>"; };
 		AB1922102650703400EF34AF /* EmojiArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArt.swift; sourceTree = "<group>"; };
 		AB192212265074D300EF34AF /* EmojiArtExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiArtExtensions.swift; sourceTree = "<group>"; };
+		AB60048A276D1A8E00696A90 /* Swifty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swifty.entitlements; sourceTree = "<group>"; };
 		AB6810EE263F26A100D86D40 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		AB6810F0263F292700D86D40 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		AB7B0E92264886EA000C992C /* TimerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerShape.swift; sourceTree = "<group>"; };
 		AB7B0E9426488DD8000C992C /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
+		AB8188FB276BFE32003D2CDF /* SidbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidbarView.swift; sourceTree = "<group>"; };
+		AB8188FD276BFECA003D2CDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ABA11EB82644C9E900A5AE87 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		ABA11EBA2644CE5F00A5AE87 /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		ABA11EBC2644D25E00A5AE87 /* Array+Indentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Indentifiable.swift"; sourceTree = "<group>"; };
@@ -112,6 +117,16 @@
 			path = "Emoji Art";
 			sourceTree = "<group>";
 		};
+		AB818900276C049B003D2CDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB12242A2651DD2A00A63DAC /* OptionalImage.swift */,
+				ABA11EBC2644D25E00A5AE87 /* Array+Indentifiable.swift */,
+				ABA11EBE2644E18C00A5AE87 /* Array+Only.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		ABDAD44A263F148600BB2E18 = {
 			isa = PBXGroup;
 			children = (
@@ -135,15 +150,16 @@
 		ABDAD455263F148600BB2E18 /* Swifty */ = {
 			isa = PBXGroup;
 			children = (
+				AB60048A276D1A8E00696A90 /* Swifty.entitlements */,
+				AB818900276C049B003D2CDF /* Extensions */,
 				AB19220B26506B2A00EF34AF /* Emoji Art */,
-				ABA11EBC2644D25E00A5AE87 /* Array+Indentifiable.swift */,
-				ABA11EBE2644E18C00A5AE87 /* Array+Only.swift */,
 				ABDAD481263F211100BB2E18 /* MatchGame */,
 				ABDAD456263F148600BB2E18 /* SwiftyApp.swift */,
 				ABDAD45A263F148700BB2E18 /* Assets.xcassets */,
 				ABDAD45F263F148700BB2E18 /* Info.plist */,
 				ABDAD45C263F148700BB2E18 /* Preview Content */,
-				AB12242A2651DD2A00A63DAC /* OptionalImage.swift */,
+				AB8188FB276BFE32003D2CDF /* SidbarView.swift */,
+				AB8188FD276BFECA003D2CDF /* ContentView.swift */,
 			);
 			path = Swifty;
 			sourceTree = "<group>";
@@ -331,8 +347,10 @@
 				ABA11EB92644C9E900A5AE87 /* Grid.swift in Sources */,
 				AB6810F1263F292700D86D40 /* EmojiMemoryGame.swift in Sources */,
 				AB7B0E9526488DD8000C992C /* Cardify.swift in Sources */,
+				AB8188FE276BFECA003D2CDF /* ContentView.swift in Sources */,
 				AB1224292651CE5300A63DAC /* AnimatableSystemFontModifier.swift in Sources */,
 				ABA11EBF2644E18D00A5AE87 /* Array+Only.swift in Sources */,
+				AB8188FC276BFE32003D2CDF /* SidbarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,20 +507,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Swifty/Swifty.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Swifty/Preview Content\"";
 				DEVELOPMENT_TEAM = 5JLUUZNDE4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Swifty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.benfield.design.Swifty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -511,20 +535,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Swifty/Swifty.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Swifty/Preview Content\"";
 				DEVELOPMENT_TEAM = 5JLUUZNDE4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Swifty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.benfield.design.Swifty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};

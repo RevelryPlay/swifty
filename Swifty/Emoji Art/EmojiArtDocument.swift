@@ -29,6 +29,13 @@ class EmojiArtDocument: ObservableObject {
     var emojis: [EmojiArt.Emoji] { emojiArt.emojis }
     
     // MARK - Intents
+    func resetDocument() {
+        UserDefaults.standard.removeObject(forKey: EmojiArtDocument.untitled)
+        
+        emojiArt = EmojiArt(json: UserDefaults.standard.data(forKey: EmojiArtDocument.untitled)) ?? EmojiArt()
+        fetchBackgroundImageData()
+    }
+    
     func addEmoji(_ emoji: String, at location: CGPoint, size: CGFloat) {
         emojiArt.addEmoji(emoji, x: Int(location.x), y: Int(location.y), size: Int(size))
     }

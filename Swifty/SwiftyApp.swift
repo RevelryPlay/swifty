@@ -11,13 +11,17 @@ import SwiftUI
 struct SwiftyApp: App {
     var body: some Scene {
         WindowGroup {
+                    SidebarView()
+                }
+        
+//        WindowGroup {
 //            HStack{
-                EmojiArtDocumentView(document: EmojiArtDocument())
-                
+//                EmojiArtDocumentView(document: EmojiArtDocument())
+//
 //                let game = EmojiMemoryGame()
 //                MatchGameView(gameView: game)
 //            }
-            
-        }
+//
+//        }
     }
 }
